@@ -8,3 +8,5 @@
       script: /home/jacky/.ssh/AnsibleHandson/ostype.sh
       args:
         executable: /bin/bash
+      register: script_output
+    - debug: msg="{{script_output.stdout}}"
