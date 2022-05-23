@@ -1,0 +1,10 @@
+- name: sample filemodule playrun
+  hosts: testservers
+  remote_user: jacky
+  
+  tasks:
+    - name: run my shell script
+      script: ostype.sh
+      register: script_output
+      
+    - debug: msg="{{script_output.stdout}}"
