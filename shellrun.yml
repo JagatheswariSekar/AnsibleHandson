@@ -1,5 +1,5 @@
 - name: sample shellscript playrun
-  hosts: all
+  hosts: ec2-user
   become: true
  
   tasks:
