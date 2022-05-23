@@ -1,5 +1,5 @@
 - name: sample shellscript playrun
-  hosts: testservers
+  hosts: all
   become: true
  
   tasks:
