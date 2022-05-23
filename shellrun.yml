@@ -1,6 +1,7 @@
 - name: sample shellscript playrun
   hosts: testservers
   remote_user: jacky
+  become: true
   
   tasks:
     - name: run my shell script
