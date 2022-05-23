@@ -1,0 +1,11 @@
+- name: Install Java
+  hosts: testservers
+  tasks:
+    - name: Uninstall Java using Ansible
+      become: yes
+      apt:
+        name: "{{ packages }}"
+        state: absent
+      vars:
+        packages:
+           - openjdk-11-jdk
