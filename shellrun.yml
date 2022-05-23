@@ -5,6 +5,6 @@
  
   tasks:
     - name: run my shell script
-      script: /home/jacky/ostype.sh
+      script: /home/jacky/.ssh/AnsibleHandson/ostype.sh
       args:
         executable: /bin/bash
