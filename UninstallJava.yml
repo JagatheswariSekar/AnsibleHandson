@@ -1,11 +1,13 @@
-- name: Install Java
+- name: UnInstall Java
   hosts: testservers
+  become: yes
   tasks:
-    - name: Uninstall Java using Ansible
-      become: yes
-      apt:
+    - name: UnInstall Java using Ansible
+      become_user: root
+      become_method: sudo
+      yum:
         name: "{{ packages }}"
         state: absent
       vars:
         packages:
-           - openjdk-11-jdk
+           - java-1.8.0-openjdk
