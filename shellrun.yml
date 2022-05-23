@@ -1,4 +1,4 @@
-- name: sample filemodule playrun
+- name: sample shellscript playrun
   hosts: testservers
   remote_user: jacky
   
