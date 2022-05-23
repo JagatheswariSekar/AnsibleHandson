@@ -6,9 +6,5 @@
   tasks:
     - name: run my shell script
       script: ostype.sh
-      register: script_output
       args:
         executable: /bin/bash
-      
-      
-    - debug: msg="{{script_output.stdout}}"
