@@ -1,12 +1,14 @@
 - name: Install Java
   hosts: testservers
+  become: yes
   tasks:
     - name: Update APT package manager repositories cache
       become: true
       yum:
         update_cache: yes
     - name: Install Java using Ansible
-
+      become_user: root
+      become_method: sudo
       yum:
         name: "{{ packages }}"
       vars:
