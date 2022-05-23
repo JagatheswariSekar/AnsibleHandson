@@ -6,10 +6,9 @@
       yum:
         update_cache: yes
     - name: Install Java using Ansible
-      become: yes
-      apt:
+
+      yum:
         name: "{{ packages }}"
-        state: present
       vars:
         packages:
-           - default-jdk
+           - java-1.8.0-openjdk
