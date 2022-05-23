@@ -1,4 +1,3 @@
-#!/bin/bash/
 case "$OSTYPE" in
   solaris*) echo "SOLARIS" ;;
   darwin*)  echo "OSX" ;; 
