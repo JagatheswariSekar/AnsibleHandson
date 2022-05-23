@@ -5,8 +5,9 @@
     - name: UnInstall Java using Ansible
       become_user: root
       become_method: sudo
-      yum:
+      apt:
         name: "{{ packages }}"
+        purge: yes
         state: absent
       vars:
         packages:
