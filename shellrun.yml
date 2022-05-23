@@ -1,5 +1,5 @@
 - name: sample shellscript playrun
-  hosts: all
+  hosts: testservers
   remote_user: jacky
   become: true
  
