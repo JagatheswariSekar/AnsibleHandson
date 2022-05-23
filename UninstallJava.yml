@@ -1,13 +1,13 @@
 - name: UnInstall Java
   hosts: testservers
-  become: yes
+  become: true
   tasks:
     - name: UnInstall Java using Ansible
       become_user: root
       become_method: sudo
       apt:
-        name: "{{ packages }}"
         purge: yes
+        pkg: "{{ packages }}"
         state: absent
       vars:
         packages:
