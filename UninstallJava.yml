@@ -10,4 +10,4 @@
         state: absent
       vars:
         packages:
-           - java-1.8.0-openjdk
+           - /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312*
