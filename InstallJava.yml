@@ -18,4 +18,5 @@
     - name: Setting default java
       alternatives:
         name: java
-        path: /usr/bin/java
+        link: /usr/bin/java/
+        path: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-1.amzn2.0.2.x86_64/jre/bin/java
